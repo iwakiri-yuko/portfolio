@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: "Roboto Slab","Zen Maru Gothic", sans-serif;
+  background: linear-gradient(to bottom, #fffdf7, #ffe9d1);
+  width: 100%;
+}
+header,main,footer {
+  width: 100%;
+}
+header {
+  background: #a67c52;
+  padding: 1rem 0;
+}
+header .logoarea {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+header img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: -50px;
+  top: -30px;
+}
+header h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 55px;
+  color: #fce9e9;
+  letter-spacing: 0.15em;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+ }
+header li {
+  margin: 0 20px;
+}
+header li a:hover{
+  text-decoration: underline wavy #ffffff;
+  color: #474040;
+  transition: all 400ms ease-out;
+}
+header li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f3ddc5;
+ 
+}
+.nav a {
+  text-decoration: none;
+}
+main {
+  padding-bottom: 50px;
+}
+main .hero {
+  margin-bottom: 50px;
+}
+main h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #4b2704;
+  text-shadow: 3px 3px 5px #dfa66e;
+}
+main .gradation {
+  background-image: linear-gradient(100deg, #940b0b 0%,#4b2704 30%,#000000 60%, #4b2704 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+main p {
+  text-align: center;
+}
+main .about p {
+  margin-top: 50px;
+}
+main h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #4b2704;
+  font-weight: bold;
+}
+main img {
+  height:  150px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 43%;
+}
+/*MENUページ*/
+.menu {
+  font-size: 35px;
+  animation: menu 2s ease 1;
+}
+@keyframes menu {
+  form {filter: blur(12px);}
+  to { filter: blur(0) drop-shadow(2px 2px rgba(221, 153, 51, 0.5));
+  transform: scale(1.5);}
+  }
+
+.grid-menu {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.grid-menu img {
+  width: 230px;
+  height: 200px;
+  border-radius: 10% 10% 0 0;
+}
+
+.grid-menu p {
+  font-weight: bold;
+  margin: 0;
+  padding: 16px 0;
+}
+.item {
+  margin-top: 40px;
+  border: 1px solid;
+  border-radius: 10%;
+  color: #8a541d;
+  background-color: #ffe9d1;
+}
+.item:hover {
+  margin-top: 20px;
+  transition-property: margin-top;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0;
+  color: #000000;
+  background-color: #dbb793;
+}
+
+/*ACCESSページ*/
+@keyframes access {
+  0%, 100% {transform:  rotate(-1deg);}
+  50% {transform: rotate(1deg);}
+}
+.access {
+  animation: access 0.3s ease-in-out infinite;
+}
+.map {
+  text-align: center;
+  padding: 60px 60px;
+}
+/*CONTACTページ*/
+form {
+  width: 380px;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #cccccc;
+  background-color: #faf8f8;
+  width: 100%;
+  margin-top: 5px;
+  padding:  8px 8px;
+  border-radius: 5px;
+}
+
+.contact-form p {
+  text-align: left;
+  font-weight: bold;
+  color: #3a3838;
+}
+textarea {
+  height: 100px;
+  margin-bottom:  20px;
+}
+.button {
+  text-align: center;
+}
+
+[type="submit"] {
+  padding: 8px 14px;
+  background-color: #a67c52;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button :hover{
+  color: #000000;
+  background-color: #8a541d;
+  transition : all 300ms ease-out 100ms;
+  transform:  translateY(6px);
+}
+/*Footer*/
+footer {
+  background-color: #a67c52;
+  color: #000000;
+  text-align: center;
+  padding: 14px 20px 20px;
+ 
+}
+footer img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  width: 300px;
+  margin: 30px auto 0;
+  justify-content:  space-evenly;
+  padding: 0;
+}
+.Y {
+  border: 1px solid #8a541d;
+  width: 38px;
+  height: 38px;
+}
+ @keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px);}
+  50% { transform: translateX(3px);}
+  75% { transform: translateX(-3px);}
+  100%{ transform: translateX(0);}
+  }
+footer ul li img:hover {
+  animation: shake 300ms linear 100ms;
+
+}
+
+/*　★やることリスト★　
+　  
+    ■index.html
+    ・文字はすべて中央揃え
+    ・店内写真の追加
+    ・文字、行の調整
+    
+    ■menu.html
+    ・メニューの写真を追加
+    ・写真のサイズ、配置の調整(flex,grid等を使用)
+    ・メニュー写真に:hoverで装飾(変化が起きればOK)
+    ・文字、行の調整
+
+    ■access.html
+    ・文字、見出しの配置調整
+    ・マップの配置調整
+
+    ■contact.html
+    ・フォームとしての設定と装飾
+    ・送信ボタンに:hoverで装飾
+    ・全体的に中央に揃える
+    
+    ■全体
+    ・文字のフォント、サイズ、色の調整
+    ・ul class="nav"に対して:hoverで装飾(変化が起きればOK)
+    
+    ■可能なら
+    ・ヘッダーの下に波模様の画像を追加(挿入先はどこでもOK)
+    ・ヘッダーのどこかにlogoの追加
+    ・footerにSNSへのリンクの挿入(リンク先は"#")
+    ・画面サイズが変わっても違和感がないように幅の設定
+
+    ※写真や素材画像は/imgのフォルダに入ってます。
+
+    ■単位
+    ・1em  ... 指定した文字サイズのpx
+    ・1rem ... HTML要素のフォントサイズに依存(基本は16px)
+    ・vh(viewport height),vw(viewport width)
+           ... ビューポートの高さと幅に対する相対値
+
+    ■主に使用する色のカラーコード
+    ・#a67c52 ... 茶色
+    ・#ffe9d1 ... かなり薄めの茶色
+    ・#ffffff ... 白
+    ・#292929 ... 少し薄めの黒
+    ※これ以外の色も使用可
+    #8a541d
+    
+     
