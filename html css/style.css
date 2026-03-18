@@ -1,281 +1,347 @@
 body {
-  margin: 0;
-  font-family: "Roboto Slab","Zen Maru Gothic", sans-serif;
-  background: linear-gradient(to bottom, #fffdf7, #ffe9d1);
-  width: 100%;
+    margin: 0;
+    width: 100%;
+    font-family: "Shippori Mincho","Zen Maru Gothic", sans-serif;
 }
 header,main,footer {
   width: 100%;
+  color: #312f2f
 }
 header {
-  background: #a67c52;
-  padding: 1rem 0;
+    background-color: #eaf4e8;
+    height: 100px;
 }
-header .logoarea {
-  width: 500px;
-  margin: 0 auto;
-  position: relative;
+header p {
+    margin: 0;
 }
-header img {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  left: -50px;
-  top: -30px;
+.header {
+    padding-top: 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #eaf4e8;
 }
-header h1 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 55px;
-  color: #fce9e9;
-  letter-spacing: 0.15em;
+.header1 {
+    width: 245px;   
+}
+.header1 p {
+    padding: 10px 40px;
+}
+.header2 {    
+    display: flex;
+}
+.list {
+   
 }
 header ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 0;
- }
-header li {
-  margin: 0 20px;
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 280px;
+    justify-content: space-around;
+    padding: 10px 20px;
 }
-header li a:hover{
-  text-decoration: underline wavy #ffffff;
-  color: #474040;
-  transition: all 400ms ease-out;
+header ul li {
+    margin: 0 18px;
+    height: 18px;  
 }
-header li a {
-  font-size: 16px;
-  font-weight: bold;
-  color: #f3ddc5;
- 
+.login {
+    width: 120px;
+    padding: 10px 0px;
 }
-.nav a {
-  text-decoration: none;
+.login p {
+    text-align: center;
+}
+.call {
+    width: 100px; 
+    background-color:  rgb(43 60 44);
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.call p {
+    text-align: center;
+}
+header .call:hover {
+    border: 1px solid #312f2f;
+    background-color: #eaf4e8;
+    color:  rgb(43 60 44);
 }
 main {
-  padding-bottom: 50px;
+    background-color: #eaf4e8;
 }
-main .hero {
-  margin-bottom: 50px;
+main .title-pic {
+    position: relative;
 }
-main h2 {
-  text-align: center;
-  font-size: 30px;
-  color: #4b2704;
-  text-shadow: 3px 3px 5px #dfa66e;
+main .title-pic .chat {
+    position: absolute;
+    left: 1100px;
+    top: 470px;
 }
-main .gradation {
-  background-image: linear-gradient(100deg, #940b0b 0%,#4b2704 30%,#000000 60%, #4b2704 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+main .title-pic .kotei-chat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+   
 }
-main p {
-  text-align: center;
+main .title {
+    display: flex;
+    background-color: #eaf4e8;
 }
-main .about p {
-  margin-top: 50px;
+main .title h1 {
+    font-size: 80px;
+    margin-left: 50px;
 }
-main h3 {
-  text-align: center;
-  font-size: 22px;
-  color: #4b2704;
-  font-weight: bold;
+main .pic1 {
+    text-align: center;
+    
 }
-main img {
-  height:  150px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center 43%;
+main .pic1 img {
+    margin-left: 50px;
+    width: 1240px;
+    object-fit: contain;
 }
-/*MENUページ*/
-.menu {
-  font-size: 35px;
-  animation: menu 2s ease 1;
+main #text {
+    padding: 300px 10px 20px 220px;
+    font-size: 18px;
 }
-@keyframes menu {
-  form {filter: blur(12px);}
-  to { filter: blur(0) drop-shadow(2px 2px rgba(221, 153, 51, 0.5));
-  transform: scale(1.5);}
-  }
+main p span {
+    border-bottom: 1px solid #312f2f;
+}
+main p span:hover {
+    cursor: pointer;
+}
+main .chat {
+    width: 200px;
+    height: 50px;
+    background-color:  rgb(43 60 44);
+    box-shadow: 0px 0px 2px  #c5bdbd;
+}
+main .chat p {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+/*見積り*/
+.mitsumori {
+    display: flex;
+    background-color: #ffffff;
+    padding-bottom: 100px;
+}
+.left {
+    width: 50%;
+    text-align: center;
+}
+.left h2{
+    font-size: 60px;
+    margin-top: 60px;
+}
+.left p {
+    padding: 0;
+}
+.mitsumori .right {
+    width: 480px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.right .item01,.item02,.item03,.item04,.item05,.item06{
+    width: 210px;
+    margin-top: 20px;
+    margin-bottom: 34px;
+}
+.right div div{
+    height: 47px;  
+    border-bottom: 1px solid #000000;
+}
+.right .item07 {
+    width: 450px;
+    height: 46px;
+    margin-bottom: 13px;
+    background-color:  rgb(43 60 44);
+}
+.right .item07:hover {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    transition: all 300ms ease-in 100ms;
+}
+.right .item07 p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    padding: 0;
+    margin-top: 10px;
+}
+.right .item07 p:hover {
+    color: #000000;
+    transition: all 300ms ease-in 100ms;
+}
+.right input {
+    border: none;
+    outline: none;
+    width: 206px;
+    height: 44px;
+    font-size: 20px;
+}
+.right input:hover {
+     background-color:  rgb(237, 241, 237);
+     border-bottom: 2px solid #000000;
+}
+.i-06 select {
+    width: 206px;
+    height: 44px;
+    border: none;
+    font-size: 15px;
+}
+.i-06 select:open {
+     color: #dacc0d;
+     border: none;
+}
+.i-06 select:hover {
+    border: none;
+    background-color: #ffffff;
+}
+/*サービス*/
+.service {
+    height: 1600px;
+    margin-left: 50px;
+}
+.service h3 {
+    font-size: 30px;
+} 
+.service p {
+    font-size: 70px;
+    margin: 0 0 30px;
+    padding: 0;
+    border-bottom: 1px solid #000000;
+    width: 90%;
+}
+.service .pic2 {
+   margin-top: 150px;
+   display: flex;
+   align-items: center;
+}
+.service .pic2 img {
+    padding: 0 8px;
+}
 
-.grid-menu {
-  width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.service button {
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    background-color: #302c2c;
+    color: #ffffff;
+    border: none;
+    margin-top: 30px;
 }
-.grid-menu img {
-  width: 230px;
-  height: 200px;
-  border-radius: 10% 10% 0 0;
+/*特徴*/
+.tokutyou  .up{
+    display: flex;
+    margin: 0 auto;
 }
-
-.grid-menu p {
-  font-weight: bold;
-  margin: 0;
-  padding: 16px 0;
+.tokutyou .up .left{
+    width: 490px;
+    height: 320px;
 }
-.item {
-  margin-top: 40px;
-  border: 1px solid;
-  border-radius: 10%;
-  color: #8a541d;
-  background-color: #ffe9d1;
+.tokutyou .up .left h2 {
+    line-height: 1.1em;
+    font-size: 60px;
+    margin-top: 40px;
 }
-.item:hover {
-  margin-top: 20px;
-  transition-property: margin-top;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
-  transition-delay: 0;
-  color: #000000;
-  background-color: #dbb793;
+.tokutyou .up .right {
+    width: 490px;
+    height: 300px;
+    padding-top: 28px;
+    margin-left: 200px;
 }
-
-/*ACCESSページ*/
-@keyframes access {
-  0%, 100% {transform:  rotate(-1deg);}
-  50% {transform: rotate(1deg);}
+.tokutyou .up .right p {
+    padding: 0;
+    line-height: 1.6em;
+    font-size: 18px;
 }
-.access {
-  animation: access 0.3s ease-in-out infinite;
+.tokutyou .line {
+    width: 90%;
+    height: 6px;
+    border-top: 1px solid #000000;
+    margin: 0 80px;
 }
-.map {
-  text-align: center;
-  padding: 60px 60px;
+.tokutyou .down div {
+    width: 240px;
+    height: 320px;
 }
-/*CONTACTページ*/
-form {
-  width: 380px;
-  margin: 0 auto;
+.tokutyou .down {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 30px;
 }
-input[type="text"],
-input[type="email"],
-textarea {
-  border: 1px solid #cccccc;
-  background-color: #faf8f8;
-  width: 100%;
-  margin-top: 5px;
-  padding:  8px 8px;
-  border-radius: 5px;
+.tokutyou .down p {
+    line-height: 1.2em;
+    font-size: 30px;
+    padding: 0;
 }
-
-.contact-form p {
-  text-align: left;
-  font-weight: bold;
-  color: #3a3838;
+.voice {
+    display: flex;
 }
-textarea {
-  height: 100px;
-  margin-bottom:  20px;
+.voice .left{
+ width: 492px;
+ height: 360px;
 }
-.button {
-  text-align: center;
+.voice .right {
+ width: 492px;
+ height: 360px;
 }
-
-[type="submit"] {
-  padding: 8px 14px;
-  background-color: #a67c52;
-  border: none;
-  color: #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
+.voice .right p{
+    padding: 0;
+    margin-top: 60px;
+    font-size: 28px;
 }
-.button :hover{
-  color: #000000;
-  background-color: #8a541d;
-  transition : all 300ms ease-out 100ms;
-  transform:  translateY(6px);
+.voice-pic {
+    padding-bottom: 50px;
+    text-align: center;
 }
-/*Footer*/
 footer {
-  background-color: #a67c52;
-  color: #000000;
-  text-align: center;
-  padding: 14px 20px 20px;
- 
+    width: 100%;
+    height: 500px;
+    background-color: rgb(43 60 44);
 }
-footer img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  
+footer p {
+    color: #ffffff;
 }
-footer ul {
-  list-style: none;
-  display: flex;
-  width: 300px;
-  margin: 30px auto 0;
-  justify-content:  space-evenly;
-  padding: 0;
+footer h2 {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 10px 0;
+    padding-left: 120px;
 }
-.Y {
-  border: 1px solid #8a541d;
-  width: 38px;
-  height: 38px;
+footer .otoiawase {
+    display: flex;
+    padding-top: 60px;
 }
- @keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-3px);}
-  50% { transform: translateX(3px);}
-  75% { transform: translateX(-3px);}
-  100%{ transform: translateX(0);}
-  }
-footer ul li img:hover {
-  animation: shake 300ms linear 100ms;
-
+footer .otoiawase div {
+    width: 50%;
 }
-
-/*　★やることリスト★　
-　  
-    ■index.html
-    ・文字はすべて中央揃え
-    ・店内写真の追加
-    ・文字、行の調整
-    
-    ■menu.html
-    ・メニューの写真を追加
-    ・写真のサイズ、配置の調整(flex,grid等を使用)
-    ・メニュー写真に:hoverで装飾(変化が起きればOK)
-    ・文字、行の調整
-
-    ■access.html
-    ・文字、見出しの配置調整
-    ・マップの配置調整
-
-    ■contact.html
-    ・フォームとしての設定と装飾
-    ・送信ボタンに:hoverで装飾
-    ・全体的に中央に揃える
-    
-    ■全体
-    ・文字のフォント、サイズ、色の調整
-    ・ul class="nav"に対して:hoverで装飾(変化が起きればOK)
-    
-    ■可能なら
-    ・ヘッダーの下に波模様の画像を追加(挿入先はどこでもOK)
-    ・ヘッダーのどこかにlogoの追加
-    ・footerにSNSへのリンクの挿入(リンク先は"#")
-    ・画面サイズが変わっても違和感がないように幅の設定
-
-    ※写真や素材画像は/imgのフォルダに入ってます。
-
-    ■単位
-    ・1em  ... 指定した文字サイズのpx
-    ・1rem ... HTML要素のフォントサイズに依存(基本は16px)
-    ・vh(viewport height),vw(viewport width)
-           ... ビューポートの高さと幅に対する相対値
-
-    ■主に使用する色のカラーコード
-    ・#a67c52 ... 茶色
-    ・#ffe9d1 ... かなり薄めの茶色
-    ・#ffffff ... 白
-    ・#292929 ... 少し薄めの黒
-    ※これ以外の色も使用可
-    #8a541d
-    
-     
+footer .otoiawase-right {
+    display: flex;
+}
+footer .otoiawase-right p {
+    font-size: 20px;
+    margin: 10px; 
+}
+footer .policy {
+    margin-top: 100px;
+    display: flex;
+    padding-bottom: 120px;
+}
+footer .policy div {
+    width: 50%;
+}
+footer .policy-left p {
+    padding-left: 120px;
+}
+footer .policy-right p {
+    margin: 10px;
+}
